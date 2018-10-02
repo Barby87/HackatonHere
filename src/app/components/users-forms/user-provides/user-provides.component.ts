@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { DatabaseService } from '../../../services/database.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -10,20 +10,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class UserProvidesComponent {
 
-  userForm: FormGroup;
+  userForm: FormGroup = this.formBuilder.group({
+    name: '',
+    lastName: '',
+    country: ''
+  });
 
   constructor(private database: DatabaseService, private formBuilder: FormBuilder) {
-    this.createUserForm();
   }
-
-  createUserForm() {
-    this.userForm = this.formBuilder.group({
-      name:'',
-      lastName:'',
-      country: ''
-      });
-  }
-
 
   addUser() {
     let time = new Date().toLocaleString()

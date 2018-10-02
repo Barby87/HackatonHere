@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
 import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
 import { environment } from '../environments/environment';
+import { HereMapComponent } from './components/here-map/here-map.component';
 
 
 
@@ -20,7 +21,8 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     UserRequestComponent,
-    UserProvidesComponent
+    UserProvidesComponent,
+    HereMapComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { environment } from '../environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
