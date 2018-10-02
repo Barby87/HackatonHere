@@ -30,6 +30,29 @@ export class HereMapComponent implements OnInit {
   @Input()
   public height: any;
 
+  public constructor() { }
+
+    public ngOnInit() { }
+
+    public ngAfterViewInit() {
+        let platform = new H.service.Platform({
+            "4sJJEtQpgjS7fDTsa0zb": this.appId,
+            "0TM03uIIHwzXg_IQD__Qpw": this.appCode
+        });
+        let defaultLayers = platform.createDefaultLayers();
+        let map = new H.Map(
+            this.mapElement.nativeElement,
+            defaultLayers.normal.map,
+            {
+                zoom: 10,
+                center: { lat: this.lat, lng: this.lng }
+            }
+        );
+    }
+
+}
+
+  /*
   private ui: any;
   private search: any;
 
@@ -83,3 +106,4 @@ export class HereMapComponent implements OnInit {
     this.map.addObject(marker);
   }
 }
+*/
