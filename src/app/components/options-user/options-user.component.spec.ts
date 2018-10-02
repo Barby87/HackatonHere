@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OptionsServiceComponent } from './options-service.component';
+import { OptionsUserComponent } from './options-user.component';
 
-describe('OptionsServiceComponent', () => {
-  let component: OptionsServiceComponent;
-  let fixture: ComponentFixture<OptionsServiceComponent>;
+describe('OptionsUserComponent', () => {
+  let component: OptionsUserComponent;
+  let fixture: ComponentFixture<OptionsUserComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OptionsServiceComponent ]
+      declarations: [ OptionsUserComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OptionsServiceComponent);
+    fixture = TestBed.createComponent(OptionsUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
