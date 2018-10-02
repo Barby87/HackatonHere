@@ -36,8 +36,8 @@ export class HereMapComponent implements OnInit {
 
     public ngAfterViewInit() {
         let platform = new H.service.Platform({
-            "4sJJEtQpgjS7fDTsa0zb": this.appId,
-            "0TM03uIIHwzXg_IQD__Qpw": this.appCode
+            "app_id": this.appId,
+            "app_code": this.appCode
         });
         let defaultLayers = platform.createDefaultLayers();
         let map = new H.Map(
