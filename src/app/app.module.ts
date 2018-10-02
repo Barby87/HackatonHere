@@ -12,7 +12,7 @@ import { RegisterPageComponent } from './components/register-page/register-page.
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
-import { AuthService } from './service/auth.service';
+import { AuthService } from './services/auth.service';
 import { environment } from '../environments/environment.prod';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { FlashMessagesModule } from 'angular2-flash-messages';

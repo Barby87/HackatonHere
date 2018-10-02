@@ -6,7 +6,7 @@ import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map'; 
 import 'rxjs/add/operator/take';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { AuthService } from '../service/auth.service';
+import { AuthService } from '../services/auth.service';
 
 
 @Injectable({
