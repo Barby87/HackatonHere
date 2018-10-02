@@ -13,7 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
 import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
 import { environment } from '../environments/environment';
-import { HereMapComponent } from './components/here-map/here-map.component';
+import { GeolocationComponent } from './components/geolocation/geolocation.component';
 
 
 
@@ -22,7 +22,7 @@ import { HereMapComponent } from './components/here-map/here-map.component';
     AppComponent,
     UserRequestComponent,
     UserProvidesComponent,
-    HereMapComponent
+    GeolocationComponent,
   ],
   imports: [
     BrowserModule,

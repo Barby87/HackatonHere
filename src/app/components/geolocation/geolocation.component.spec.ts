@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HereMapComponent } from './here-map.component';
+import { GeolocationComponent } from './geolocation.component';
 
-describe('HereMapComponent', () => {
-  let component: HereMapComponent;
-  let fixture: ComponentFixture<HereMapComponent>;
+describe('GeolocationComponent', () => {
+  let component: GeolocationComponent;
+  let fixture: ComponentFixture<GeolocationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HereMapComponent ]
+      declarations: [ GeolocationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HereMapComponent);
+    fixture = TestBed.createComponent(GeolocationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
