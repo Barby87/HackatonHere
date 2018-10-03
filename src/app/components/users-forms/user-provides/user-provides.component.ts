@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { DatabaseService } from '../../../services/database.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../services/auth.service';
@@ -12,35 +12,37 @@ import { AuthService } from '../../../services/auth.service';
 export class UserProvidesComponent {
 
   userForm: FormGroup;
+  nameUser: string;
+  emailUser: string;
 
   constructor(private database: DatabaseService, private formBuilder: FormBuilder, private afAuth: AuthService) {
     this.createUserForm();
+
+    this.afAuth.getAuth().subscribe(auth => {
+      this.nameUser = auth.displayName;
+      this.emailUser = auth.email;
+    }
   }
 
   createUserForm() {
     this.userForm = this.formBuilder.group({
-      service:'',
+      service: '',
       tariff: ''
-      });
+    });
   }
 
 
-addProperties() {
-    let time = new Date().toLocaleString()
+  addProperties() {
     const newUserProvides = {
       service: this.userForm.value.service,
       tariff: this.userForm.value.tariff,
-      time
     };
-    //this.database.addData('usersWhoProvides ', newUserProvides);
-    //console.log(newUserProvides);
   }
 
-  addUser(user) {
+  addUser() {
     this.database.addData(this.afAuth.user.uid, { // addData(mi firebase-Key, objeto miperfil)
-     /*  name: user.displayName,
-      email: user.email,
-      uid: user.key, */
+      name: this.nameUser,
+      email: this.emailUser,
       service: this.userForm.value.service,
       tariff: this.userForm.value.tariff
     });
