@@ -1,19 +1,11 @@
-
 //material
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { RegisterPageComponent } from './components/register-page/register-page.component';
-import { LoginPageComponent } from './components/login-page/login-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
-import { AuthService } from './services/auth.service';
-import { environment } from '../environments/environment.prod';
-import { FlashMessagesService } from 'angular2-flash-messages';
+import { environment} from '../environments/environment.prod';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -24,19 +16,20 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
 import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
 
-import { environment } from '../environments/environment';
-
 //nuestros componentes
 import { HereMapComponent } from './components/here-map/here-map.component';
-import { OptionsServiceComponent } from './components/options-service/options-service.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
+import { OptionsUserComponent } from './components/options-user/options-user.component';
 
-import { AuthService } from './service/auth.service';
+import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 /*const routes: Routes = [
   { path: 'options', 
@@ -58,8 +51,8 @@ import { AuthGuard } from './guards/auth.guard';
     UserRequestComponent,
     UserProvidesComponent,
     HereMapComponent,
-    OptionsServiceComponent,
     HomeComponent,
+    OptionsUserComponent,
   ],
   imports: [
     BrowserModule,
