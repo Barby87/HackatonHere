@@ -9,10 +9,10 @@ export class DatabaseService {
   userList$: AngularFireList<any>;
 
   constructor(private database: AngularFireDatabase) {
-    this.userList$ = this.database.list('/users');
+    this.userList$ = this.database.list('/usersWhoProvides');
   }
 
-  addData(path, object) {
-    this.database.list(path).push(object);
+  addData(key, object) {
+    this.database.list(`usersWhoProvides/${key}/`).push(object);
   }
 }
