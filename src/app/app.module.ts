@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+//material
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 
@@ -23,7 +24,10 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
 import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
 import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
+
 import { environment } from '../environments/environment';
+
+//nuestros componentes
 import { HereMapComponent } from './components/here-map/here-map.component';
 
 @NgModule({
