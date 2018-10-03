@@ -27,24 +27,20 @@ export class UserProvidesComponent {
   createUserForm() {
     this.userForm = this.formBuilder.group({
       service: '',
-      tariff: ''
+      tariff: '',
+      contact: '',
+      experience: ''
     });
   }
 
-
-  addProperties() {
-    const newUserProvides = {
-      service: this.userForm.value.service,
-      tariff: this.userForm.value.tariff,
-    };
-  }
-
   addUser() {
-    this.database.addData(this.afAuth.user.uid, { // addData(mi firebase-Key, objeto miperfil)
+    this.database.addData(this.afAuth.user.uid, {
       name: this.nameUser,
       email: this.emailUser,
       service: this.userForm.value.service,
-      tariff: this.userForm.value.tariff
+      tariff: this.userForm.value.tariff,
+      contact: this.userForm.value.contact,
+      experience: this.userForm.value.experience
     });
   }
 
