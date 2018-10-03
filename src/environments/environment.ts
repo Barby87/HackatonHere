@@ -8,5 +8,4 @@ export const environment = {
     storageBucket: "servicio-comunal.appspot.com",
     messagingSenderId: "669786030885"
   }
-};
-
+}

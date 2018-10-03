@@ -56,7 +56,6 @@ export class HereMapComponent implements OnInit {
         center: { lat: this.lat, lng: this.lng }
       }
     );
-    
 
     let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
     this.ui = H.ui.UI.createDefault(this.map, defaultLayers);

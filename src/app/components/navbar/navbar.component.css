@@ -2,3 +2,10 @@ img.rounded-circle {
     width: 40px;
     height: 40px;
 }
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999;
+}
