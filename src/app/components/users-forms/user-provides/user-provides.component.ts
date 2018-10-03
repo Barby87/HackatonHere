@@ -10,16 +10,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class UserProvidesComponent {
 
-  userForm: FormGroup = this.formBuilder.group({
+  /* userForm: FormGroup = this.formBuilder.group({
     name: '',
     lastName: '',
     country: ''
-  });
+  }); */
 
   constructor(private database: DatabaseService, private formBuilder: FormBuilder) {
   }
 
-  addUser() {
+ /*  addUser() {
     let time = new Date().toLocaleString()
     const newUser = {
       name: this.userForm.value.name,
@@ -29,6 +29,6 @@ export class UserProvidesComponent {
     };
     this.database.addData('users', newUser);
     console.log(newUser);
-  }
+  } */
 
 }
