@@ -1,36 +1,34 @@
-<!-- <div class="container main-container">
+<div class="container main-container">
   <h4>Perfil usuario que presta servicio
   </h4>
   <hr>
   <form [formGroup]="userForm" (ngSubmit)="addUser()">
+
     <div>
+
       <div class="form-group row">
-        <label class="col-2 col-form-label">Nombre</label>
+        <label class="col-2 col-form-label">servicio</label>
         <div class="col-8">
-          <input class="form-control" type="text" placeholder="Nombre" name="nombre" required formControlName="name">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-2 col-form-label">&nbsp;</label>
-        <div class="input-group col-md-8">
-          <button type="submit" class="btn btn-outline-primary">
-            Guardar
-          </button>
+
+          <input class="form-control" type="text" placeholder="Servicio" name="servicio" required formControlName="service">
         </div>
       </div>
     </div>
-    <div class="container ">
-    <div class="input-group">
-      <select class="custom-select" (onChange)="addUser(service)">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button">Button</button>
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Tarifa</label>
+      <div class="col-md-8">
+        <input class="form-control" type="text" placeholder="Tarifa" formControlName="tariff">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-2 col-form-label">&nbsp;</label>
+      <div class="input-group col-md-8">
+        <button type="submit" class="btn btn-outline-primary">
+          Guardar
+        </button>
       </div>
     </div>
 
   </form>
- -->
+
+</div>
