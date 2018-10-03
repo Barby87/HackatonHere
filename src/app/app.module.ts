@@ -1,43 +1,49 @@
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core'
+import { NgModule } from '@angular/core';
+import { AuthGuard } from './guards/auth.guard';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routes } from './app-routing.module';
 
+//Firebase
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
-import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
+import { AuthService } from './services/auth.service';
 import { environment } from '../environments/environment';
 
-import { GeolocationComponent } from './components/geolocation/geolocation.component';
-import {OptionsServiceComponent} from './components/options-service/options-service.component';
-import { HomeComponent } from './components/home/home.component';
+//Nuestros componentes
+import { FlashMessagesModule } from 'angular2-flash-messages';
+import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
+import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { RegisterPageComponent } from './components/register-page/register-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
-/*const routes: Routes = [
-  { path: 'options',
-    component: OptionsServiceComponent
-  },
 
-  { path: 'home',
-    component: HomeComponent
-  }
-];*/
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
+    NavbarComponent,
+    LoginPageComponent,
     UserRequestComponent,
     UserProvidesComponent,
-    GeolocationComponent,
-    HomeComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
+    FormsModule,
+    AngularFireAuthModule,
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
@@ -45,11 +51,12 @@ import { HomeComponent } from './components/home/home.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
-    OptionsServiceComponent,
 
+    FlashMessagesModule.forRoot(),
+    RouterModule.forRoot(routes),
 
   ],
-  providers: [],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 
