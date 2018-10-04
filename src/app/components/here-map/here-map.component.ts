@@ -37,6 +37,11 @@ export class HereMapComponent implements OnInit {
   private platform: any;
   private map: any;
 
+
+
+  public currentPosition: any;
+  
+
   public constructor() { }
 
   // Inicializando funcionalidad de búsqueda antes de que la interfaz esté lista
@@ -46,16 +51,26 @@ export class HereMapComponent implements OnInit {
         'app_code': this.appCode
     });
     this.search = new H.places.Search(this.platform.getPlacesService());
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((showPosition)=>{
+            this.lat = showPosition.coords.latitude;
+            this.lng = showPosition.coords.longitude;
+            this.mapLocation();
+        });
+    } else {
+        console.log('Tu navegador no soporta geolocalización, por favor intenta con otro navegador');
+    }
 }
 
   // Preparando para algunos comportamientos de UI y eventos
-  public ngAfterViewInit() {
+  public mapLocation() {
     let defaultLayers = this.platform.createDefaultLayers();
     this.map = new H.Map(
         this.mapElement.nativeElement,
         defaultLayers.normal.map,
         {
-            zoom: 10,
+            zoom: 15,
             center: { lat: this.lat, lng: this.lng }
         }
     );
