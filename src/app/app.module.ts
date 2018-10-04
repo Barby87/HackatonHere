@@ -30,6 +30,7 @@ import { UserProvidesComponent } from './components/users-forms/user-provides/us
 //nuestros componentes
 import { HereMapComponent } from './components/here-map/here-map.component';
 import { HereRoutesComponent } from './components/here-routes/here-routes.component';
+import { PerfilModalComponent } from './components/perfil-modal/perfil-modal.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { HereRoutesComponent } from './components/here-routes/here-routes.compon
 
     RegisterPageComponent
 
-    HereRoutesComponent
+    HereRoutesComponent,
+
+    PerfilModalComponent
 
   ],
   imports: [

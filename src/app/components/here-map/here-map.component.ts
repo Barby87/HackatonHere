@@ -89,10 +89,3 @@ export class HereMapComponent implements OnInit {
       this.map.addObject(marker);
   }
 }
-
-
-
-
-
-
-

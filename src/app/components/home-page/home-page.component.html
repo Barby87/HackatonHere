@@ -1,57 +1,10 @@
-
-<div class="mt-5 pt-3 px-0">
+<div class="mt-5 px-0">
     <h2 class="mt-5 text-center">Bienvenid@ {{nameUser}}</h2>
     <p class="text-center lead">¿Que es lo que necesitas?</p>
-    <!-- <div class="container-fluid mt-5">
-        <div class="row ">
-            <div class="col-12 mb-3">
-                <button (click)="servicesUser()" class="btn btn-danger btn-lg btnStyle pt-5 pb-5 lead d-block mx-auto"><p class="text-center"> Necesito un servicio</p>  </button>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-12 mx-auto mb-3">
-                <button (click)="servicesClient()" class="btn btn-success btn-lg btnStyle pt-5 pb-5 lead d-block mx-auto"><p class="text-center">Ofrezco un servicio</p>  </button>
-            </div>
-        </div>
-    </div> -->
-    <!-- Button trigger modal -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Buscar
-  </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <app-perfil-modal></app-perfil-modal>
 
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button> -->
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title d-block mx-auto" id="exampleModalCenterTitle">Servicios de Mascotas</h5>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <img src="../../../assets/avatar.jpg" alt="" class="w-25 img-fluid rounded-circle mx-auto d-block">
-                    </div>
-                    <div class="containerInfoModal">
-                        <p class="lead text-center mt-3 mb-1"><i class="far fa-user"></i> José Martínez</p>
-                        <p class="lead text-center"><i class="far fa-clock"></i> Médico Veterinario</p>
-                        <p class="text-center"><i class="far fa-clock"></i><b> Disponibilidad horaria:</b> lunes a viernes de 15hrs a 21hrs</p>
-                        <p class="text-center"><i class="far fa-money-bill-alt"></i><b> Tarifa:</b> depende del servicio</p>
-                        <p class="text-center"><b>Servicios:</b> Consultas a domicilio, Vacunas, curaciónes, desparasitación, recetas, tratamientos, urgencias</p>
-
-                        <p class="text-center"><b>Telefono:</b> <a href="tel:+34000000000">+34000000000</a></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
 </div>
 <!-- 
 <router-outlet></router-outlet> -->
-
