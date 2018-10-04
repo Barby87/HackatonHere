@@ -24,7 +24,6 @@ import { AngularFireModule } from '@angular/fire';
 import { AuthService } from './services/auth.service';
 import { environment} from '../environments/environment.prod';
 import { AuthGuard } from './guards/auth.guard';
-import { UserRequestComponent } from './components/users-forms/user-request/user-request.component';
 import { UserProvidesComponent } from './components/users-forms/user-provides/user-provides.component';
 
 //nuestros componentes
@@ -32,13 +31,14 @@ import { HereMapComponent } from './components/here-map/here-map.component';
 import { HereRoutesComponent } from './components/here-routes/here-routes.component';
 import { PerfilModalComponent } from './components/perfil-modal/perfil-modal.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
     LoginPageComponent,
-    UserRequestComponent,
     UserProvidesComponent,
     HereMapComponent,
     RegisterPageComponent,
