@@ -2,6 +2,16 @@ h4 {
   color: #6f6cff;
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #08bbf6;
+}
+.header-form {
+  margin-top: 40px;
+}
+
 .container-form {
   background-image: url('/assets/fondo.png');
   height: 100vh;
