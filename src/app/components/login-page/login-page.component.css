@@ -5,6 +5,7 @@
 
 .styleCard {
     background: transparent;
+    border: none;
 }
 
 .btn-facebook {
@@ -23,4 +24,12 @@
     height: 50px;
     background: transparent;
     border: 1px #ccc solid;
+}
+
+.colorText {
+    color: #34CEFF;
+}
+
+.colorText1 {
+    color: #6F6CFF !important;
 }

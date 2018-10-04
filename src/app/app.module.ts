@@ -41,11 +41,8 @@ import { PerfilModalComponent } from './components/perfil-modal/perfil-modal.com
     UserRequestComponent,
     UserProvidesComponent,
     HereMapComponent,
-
-    RegisterPageComponent
-
+    RegisterPageComponent,
     HereRoutesComponent,
-
     PerfilModalComponent
 
   ],

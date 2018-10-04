@@ -14,10 +14,10 @@
                         <a class="nav-link" href="#" *ngIf="!isLogin" [routerLink]="['register']">Registro</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" *ngIf="isLogin" [routerLink]="['home']">Inicio</a>
+                        <a class="nav-link" href="#" *ngIf="isLogin" [routerLink]="['home']">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" *ngIf="isLogin" [routerLink]="['userProvide']">Perfil</a>
+                        <a class="nav-link" href="#" *ngIf="isLogin" [routerLink]="['editprofile']">Editar Perfil</a>
                     </li>
                     <li class="nav-item" *ngIf="isLogin">
                         <a class="nav-link">{{nameUser}}</a>
@@ -39,5 +39,9 @@
         <div class="col-md-9 col-12 mx-auto mt-5">
             <router-outlet></router-outlet>
         </div>
+        <div class="row">
+            <div class="col-md-9 col-12 mx-auto mt-5">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
     </div>
-</div>
