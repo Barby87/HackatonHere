@@ -63,6 +63,7 @@ export class HereMapComponent implements OnInit {
     this.ui = H.ui.UI.createDefault(this.map, defaultLayers);
   }
 
+
   // Eliminando cualquier objeto que ya exista en el mapa (marcadorres, eventos, etc.)
   public places(query: string) {
     this.map.removeObjects(this.map.getObjects());
