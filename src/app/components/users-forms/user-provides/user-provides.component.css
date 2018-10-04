@@ -7,7 +7,19 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid #08bbf6;
+  font-family: sans-serif;
 }
+
+.content {
+  padding: 40px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6b6cffad;
+  border-color: #6b6cffad;
+}
+
 .header-form {
   margin-top: 40px;
 }
@@ -25,7 +37,7 @@ border: 1px solid #08bbf6;
 
 .col-form-label {
   color: #6f6cff;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 
