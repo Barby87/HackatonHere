@@ -3,8 +3,6 @@ import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 
-
-
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -23,7 +21,6 @@ export class RegisterPageComponent implements OnInit {
   onSubmitAddUser(){
     this.authService.signup(this.email, this.password)
     .then ((res) => {
-     
       this.router.navigate(['private']);
       console.log("Registro con exito!");
       console.log(res);
