@@ -51,7 +51,7 @@ export class HereMapComponent implements OnInit {
         'app_code': this.appCode
     });
     this.search = new H.places.Search(this.platform.getPlacesService());
-
+    // Geolocalización
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((showPosition)=>{
             this.lat = showPosition.coords.latitude;
@@ -59,9 +59,10 @@ export class HereMapComponent implements OnInit {
             this.mapLocation();
         });
     } else {
-        console.log('Tu navegador no soporta geolocalización, por favor intenta con otro navegador');
+        alert('Tu navegador no soporta geolocalización, por favor intenta con otro navegador');
     }
 }
+
 
   // Preparando para algunos comportamientos de UI y eventos
   public mapLocation() {

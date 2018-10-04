@@ -18,10 +18,14 @@
 <!-- 
 <router-outlet></router-outlet> -->
 
-<input type="text" placeholder="Ingresa una búsqueda" [(ngModel)]="query" />
-<button (click)="map.places(query)">Buscar</button>
+<div style="padding: 10px 0">
+    <input type="text" class="form-control" [(ngModel)]="query">
 
-<here-map #map appId="4sJJEtQpgjS7fDTsa0zb" appCode="0TM03uIIHwzXg_IQD__Qpw" lat="-33.4726900" lng="-70.6472400" width="100vw" height="100vh"></here-map>
+    <button class="btn btn-primary" (click)="map.places(query)">Buscar</button>
+</div>
 
+<div class="container-fluid">
+    <here-map #map appId="4sJJEtQpgjS7fDTsa0zb" appCode="0TM03uIIHwzXg_IQD__Qpw" lat="-33.4726900" lng="-70.6472400" width="100%" height="80vh"></here-map>
+</div>
 
 
