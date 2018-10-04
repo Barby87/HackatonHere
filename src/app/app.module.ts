@@ -35,9 +35,7 @@ import { HereRoutesComponent } from './components/here-routes/here-routes.compon
     UserRequestComponent,
     UserProvidesComponent,
     HereMapComponent,
-
-    RegisterPageComponent
-
+    RegisterPageComponent,
     HereRoutesComponent
 
   ],

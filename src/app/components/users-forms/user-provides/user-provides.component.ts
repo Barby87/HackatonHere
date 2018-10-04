@@ -21,7 +21,7 @@ export class UserProvidesComponent {
     this.afAuth.getAuth().subscribe(auth => {
       this.nameUser = auth.displayName;
       this.emailUser = auth.email;
-    }
+    })
   }
 
   createUserForm() {
