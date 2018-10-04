@@ -1,14 +1,26 @@
+#home-container {
+    background-image: url('/assets/fondo.png');
+    background-size: cover;
+    width: 100%;
+}
+
+h4 {
+    color: #6f6cff;
+}
+
 .form-control {
     margin-bottom: 20px;
+    margin-left: 20px; 
+    border: 1px solid #08bbf6;
+
 } 
 
 .btn {
     margin-bottom: 20px;
     float: right;
-}
-
-.container-fluid {
-    margin-bottom: 50px;
+    color: #fff;
+    background-color: #5d32d3ad;
+    border-color: #6b6cffad;
 }
 
 .btnStyle {

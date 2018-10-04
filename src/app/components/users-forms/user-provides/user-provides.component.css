@@ -1,43 +1,40 @@
 h4 {
-  color: #6f6cff;
+    color: #6f6cff;
 }
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid #08bbf6;
-  font-family: sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #08bbf6;
+    font-family: sans-serif;
 }
 
 .content {
-  padding: 40px;
+    padding: 40px;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #6b6cffad;
-  border-color: #6b6cffad;
+    color: #fff;
+    background-color: #6b6cffad;
+    border-color: #6b6cffad;
 }
 
 .header-form {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .container-form {
-  background-image: url('/assets/fondo.png');
-  height: 100vh;
-  background-size: cover;
-  position: relative;
+    background-image: url('/assets/fondo.png');
+    background-size: cover;
+    width: 104%;
 }
 
 .form-control {
-border: 1px solid #08bbf6;
+    border: 1px solid #08bbf6;
 }
 
 .col-form-label {
-  color: #6f6cff;
-  font-weight: 400;
+    color: #6f6cff;
+    font-weight: 400;
 }
-
-
