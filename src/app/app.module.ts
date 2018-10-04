@@ -10,10 +10,15 @@ import { HttpModule } from '@angular/http';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
+
+
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { AuthService } from './services/auth.service';
@@ -24,6 +29,7 @@ import { UserProvidesComponent } from './components/users-forms/user-provides/us
 //nuestros componentes
 import { HereMapComponent } from './components/here-map/here-map.component';
 import { HereRoutesComponent } from './components/here-routes/here-routes.component';
+import { PerfilModalComponent } from './components/perfil-modal/perfil-modal.component';
 
 
 
@@ -36,7 +42,8 @@ import { HereRoutesComponent } from './components/here-routes/here-routes.compon
     UserProvidesComponent,
     HereMapComponent,
     RegisterPageComponent,
-    HereRoutesComponent
+    HereRoutesComponent,
+    PerfilModalComponent
 
   ],
   imports: [

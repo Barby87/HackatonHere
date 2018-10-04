@@ -1,0 +1,34 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Buscar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button> -->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title d-block mx-auto" id="exampleModalCenterTitle">Servicios de Mascotas</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img src="../../../assets/avatar.jpg" alt="" class="w-25 img-fluid rounded-circle mx-auto d-block">
+                </div>
+                <div class="containerInfoModal">
+                    <p class="lead text-center mt-3 mb-1"><i class="far fa-user"></i> {{nameUser}}</p>
+                    <p class="lead text-center"><i class="far fa-clock"></i>{{userForm.value.service}}</p>
+                    <p class="text-center"><i class="far fa-clock"></i><b> Disponibilidad horaria:</b> lunes a viernes de 15hrs a 21hrs</p>
+                    <p class="text-center"><i class="far fa-money-bill-alt"></i><b> Tarifa:</b> {{userForm.value.tariff}}</p>
+                    <p class="text-center"><b>Servicios:</b> {{userForm.value.experience}}</p>
+                    <p class="text-center"><b>Telefono:</b> <a href="tel:+34000000000">{{userForm.value.contact}}</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

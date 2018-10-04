@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { DatabaseService } from '../../../services/database.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../services/auth.service';
+import { DatabaseService } from '../../services/database.service';
+
 
 
 @Component({
-  selector: 'app-user-provides',
-  templateUrl: './user-provides.component.html',
-  styleUrls: ['./user-provides.component.css']
+  selector: 'app-perfil-modal',
+  templateUrl: './perfil-modal.component.html',
+  styleUrls: ['./perfil-modal.component.css']
 })
-export class UserProvidesComponent {
+export class PerfilModalComponent {
 
   userForm: FormGroup;
   nameUser: string;
@@ -45,6 +46,8 @@ export class UserProvidesComponent {
       experience: this.userForm.value.experience
     });
   }
+
+  
 
 }
 

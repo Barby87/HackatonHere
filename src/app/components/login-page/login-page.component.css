@@ -1,17 +1,44 @@
+.content {
+    background-image: url("../../../assets/fondo.png");
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.styleCard {
+    background: transparent;
+    border: none;
+}
+
 .btn-facebook {
-    background: #3b5998;
-    color: #fff;
-    width: 32%;
+    color: #3b5998;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px #ccc solid;
 }
 
 .btn-google {
-    background: #dd4b39;
-    color: #fff;
-    width: 32%;
+    color: #dd4b39;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px #ccc solid;
 }
 
-.btn-twitter {
-    background: #28AAE1;
-    color: #fff;
-    width: 32%;
+.colorText {
+    color: #34CEFF;
+}
+
+.colorText1 {
+    color: #6F6CFF !important;
+}
+
+.styleContnt {
+    margin-top: -40px;
+}
+
+.imgStyle {
+    width: 150px;
 }

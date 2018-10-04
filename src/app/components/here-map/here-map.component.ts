@@ -103,11 +103,6 @@ export class HereMapComponent implements OnInit {
       }, false);
       this.map.addObject(marker);
   }
+
+  
 }
-
-
-
-
-
-
-
