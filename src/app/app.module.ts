@@ -31,12 +31,15 @@ import { HereRoutesComponent } from './components/here-routes/here-routes.compon
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    RegisterPageComponent,
     LoginPageComponent,
     UserRequestComponent,
     UserProvidesComponent,
     HereMapComponent,
+
+    RegisterPageComponent
+
     HereRoutesComponent
+
   ],
   imports: [
     BrowserModule,
