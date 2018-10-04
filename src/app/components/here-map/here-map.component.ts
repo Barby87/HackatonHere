@@ -36,8 +36,12 @@ export class HereMapComponent implements OnInit {
   private search: any;
   private platform: any;
   private map: any;
+
+
+
   public currentPosition: any;
   
+
   public constructor() { }
 
   // Inicializando funcionalidad de búsqueda antes de que la interfaz esté lista
@@ -83,9 +87,9 @@ export class HereMapComponent implements OnInit {
             this.dropMarker({ 'lat': data.results.items[i].position[0], 'lng': data.results.items[i].position[1] }, data.results.items[i]);
         }
     }, error => {
-        console.error(error);
+      console.error(error);
     });
-}
+  }
 
   // Esperamos información de coordenadas, y datos para crear la burbuja de información
   private dropMarker(coordinates: any, data: any) {

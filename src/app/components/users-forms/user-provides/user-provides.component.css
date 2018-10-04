@@ -1,5 +1,21 @@
+h4 {
+  color: #6f6cff;
+}
+
 .container-form {
-  margin-top: 90px;
+  background-image: url('/assets/fondo.png');
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.form-control {
+border: 1px solid #08bbf6;
+}
+
+.col-form-label {
+  color: #6f6cff;
+  font-weight: 700;
 }
 
 
