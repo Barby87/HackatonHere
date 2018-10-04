@@ -3,7 +3,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 
-
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',

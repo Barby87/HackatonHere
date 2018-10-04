@@ -2,12 +2,17 @@ import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 declare var H: any;
 
+
 @Component({
   selector: 'here-map',
   templateUrl: './here-map.component.html',
   styleUrls: ['./here-map.component.css']
 })
 export class HereMapComponent implements OnInit {
+  private platform: any;
+  private map: any;
+  private ui: any;
+  private search: any;
 
   @ViewChild("map")
   public mapElement: ElementRef;
@@ -30,13 +35,8 @@ export class HereMapComponent implements OnInit {
   @Input()
   public height: any;
 
-  private ui: any;
-  private search: any;
-
-  private platform: any;
-  private map: any;
-
   public constructor() { }
+
 
   public ngOnInit() {
     this.platform = new H.service.Platform({
@@ -56,6 +56,7 @@ export class HereMapComponent implements OnInit {
         center: { lat: this.lat, lng: this.lng }
       }
     );
+
     let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
     this.ui = H.ui.UI.createDefault(this.map, defaultLayers);
   }
@@ -83,4 +84,4 @@ private dropMarker(coordinates: any, data: any) {
     this.map.addObject(marker);
   }
 }
-  
+
