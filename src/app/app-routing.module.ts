@@ -6,8 +6,6 @@ import { RegisterPageComponent } from './components/register-page/register-page.
 import { AuthGuard } from './guards/auth.guard';
 
 
-
-
 const routes: Routes = [
     {path: 'home', component: HomePageComponent, canActivate:[AuthGuard]},
     {path: 'login', component: LoginPageComponent},

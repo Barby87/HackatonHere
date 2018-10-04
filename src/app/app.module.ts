@@ -24,6 +24,7 @@ import { UserProvidesComponent } from './components/users-forms/user-provides/us
 
 //nuestros componentes
 import { HereMapComponent } from './components/here-map/here-map.component';
+import { HereRoutesComponent } from './components/here-routes/here-routes.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HereMapComponent } from './components/here-map/here-map.component';
     LoginPageComponent,
     UserRequestComponent,
     UserProvidesComponent,
-    HereMapComponent
+    HereMapComponent,
+    HereRoutesComponent
   ],
   imports: [
     BrowserModule,
