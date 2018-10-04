@@ -1,7 +1,7 @@
 
 <div class="mt-5 pt-3 px-0">
     <h2 class="mt-5 text-center">Bienvenid@ {{nameUser}}</h2>
-    <p class="text-center lead">¿Que es lo que necesitas?</p>
+    <p class="text-center lead">¿Qué es lo que necesitas?</p>
     <!-- <div class="container-fluid mt-5">
         <div class="row ">
             <div class="col-12 mb-3">
@@ -17,4 +17,11 @@
 </div>
 <!-- 
 <router-outlet></router-outlet> -->
+
+<input type="text" placeholder="Ingresa una búsqueda" [(ngModel)]="query" />
+<button (click)="map.places(query)">Buscar</button>
+
+<here-map #map appId="4sJJEtQpgjS7fDTsa0zb" appCode="0TM03uIIHwzXg_IQD__Qpw" lat="-33.4726900" lng="-70.6472400" width="100vw" height="100vh"></here-map>
+
+
 
