@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
-
 
 
 @Component({
@@ -23,12 +22,12 @@ export class LoginPageComponent implements OnInit {
   onSubmitLogin(){
     this.authService.singIn(this.email, this.password)
     .then ((res) => {
-      
+
       this.router.navigate(['home']);
       console.log("Login con exito!");
       console.log(res);
     }).catch((err) => {
-      
+
       this.router.navigate(['login']);
       console.log(err);
     })

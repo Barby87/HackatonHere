@@ -9,12 +9,17 @@ import 'rxjs/add/operator/map';
   providedIn: 'root'
 })
 export class AuthService {
-  user: Observable<firebase.User>;
-  constructor(public afAuth: AngularFireAuth) { }
+  user: any=null;
+  constructor(public afAuth: AngularFireAuth) {
+    this.afAuth.authState.subscribe((auth) => {
+      this.user = auth;
+      console.log(this.user)
+    });
+  }
 
   // Registro con email
   signup(email: string, password: string) {
-    return this.afAuth.auth.createUserWithEmailAndPassword(email,password);
+    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
   }
 
   // Login con email
