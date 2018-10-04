@@ -12,6 +12,7 @@ export class HomePageComponent implements OnInit {
   public nameUser : string;
   public emailUser: string;
   public photoUser: string;
+  public query: string;
   constructor(public authService: AuthService, private router: Router,
     private activatedRoute: ActivatedRoute) { }
 
