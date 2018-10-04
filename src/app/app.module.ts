@@ -13,10 +13,16 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//nuestros componentes
+import { HereMapComponent } from './components/here-map/here-map.component';
+
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
+
+
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { AuthService } from './services/auth.service';
@@ -27,8 +33,7 @@ import { UserProvidesComponent } from './components/users-forms/user-provides/us
 
 import { environment } from '../environments/environment';
 
-//nuestros componentes
-import { HereMapComponent } from './components/here-map/here-map.component';
+
 
 @NgModule({
   declarations: [
