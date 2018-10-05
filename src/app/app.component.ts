@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
     // La variable query se vinculará al formulario y también se usará cuando se busquen lugares y se rellene el mapa
-    public query: string;
+   /* public query: string;
 
     public constructor() {
         this.query = '';
     }
-
+*/
   ngOnInit() { }
 
 }
