@@ -14,7 +14,9 @@ export class HomePageComponent implements OnInit {
   public photoUser: string;
   public query: string;
   constructor(public authService: AuthService, private router: Router,
-    private activatedRoute: ActivatedRoute) { }
+    private activatedRoute: ActivatedRoute) {
+      this.query = '';
+    }
 
   ngOnInit() {
     this.authService.getAuth().subscribe(auth => {

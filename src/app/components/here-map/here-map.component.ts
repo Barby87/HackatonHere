@@ -36,19 +36,16 @@ export class HereMapComponent implements OnInit {
   private search: any;
   private platform: any;
   private map: any;
-
-
-
   public currentPosition: any;
   
-
   public constructor() { }
 
   // Inicializando funcionalidad de búsqueda antes de que la interfaz esté lista
   public ngOnInit() {
     this.platform = new H.service.Platform({
         'app_id': this.appId,
-        'app_code': this.appCode
+        'app_code': this.appCode,
+        useHTTPS: true
     });
     this.search = new H.places.Search(this.platform.getPlacesService());
     // Geolocalización
@@ -62,7 +59,6 @@ export class HereMapComponent implements OnInit {
         alert('Tu navegador no soporta geolocalización, por favor intenta con otro navegador');
     }
 }
-
 
   // Preparando para algunos comportamientos de UI y eventos
   public mapLocation() {
@@ -103,7 +99,5 @@ export class HereMapComponent implements OnInit {
           this.ui.addBubble(bubble);
       }, false);
       this.map.addObject(marker);
-  }
-
-  
+  }  
 }
